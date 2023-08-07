@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./basket-shopping-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Listado de Compras</title>
+</head>
+<body>
+    <div id="modal-edit-container" class="hidden">
+        <section id="modal-edit-content">
+            <h3>¿Cuál es el nuevo artículo?</h3>
+            <form action="#">
+                <input type="text" name="edit-item" id="edit-item">
+                <div class="btn-modal-container">
+                    <button class="btn-modal" id="cancel-modal-btn">Cancelar</button>
+                    <button class="btn-modal" id="edit-modal-btn">Editar</button>
+                </div>
+            </form>
+        </section>           
+    </div>
+    <headear>
+        <button id="btn-light-mode" class="btn-mode" aria-label="Activar modo claro">
+            <i class="far fa-lightbulb ligth" aria-hidden="true"></i>  Modo claro
+        </button>
+        <button id="btn-dark-mode" class="btn-mode hidden" aria-label="Activar modo oscuro">
+            <i class="far fa-lightbulb dark" aria-hidden="true"></i>  Modo oscuro
+        </button>
+    </headear>
+    <main>
+        <section class="item-entry-container">
+            <h2>Ingresa el Artículo</h2>
+            <form action="#" id="entry-form">
+                <input type="text" name="item-entry" id="item-entry" placeholder="Nombre del artículo">
+                <button id="btn-add-item">Agregar</button>
+            </form>
+        </section>
+        <section class="list-container">
+            <h2>Listado de Compras <span><i class="fa-solid fa-list-check" aria-hidden="true"></i></span></h2>
+            <ul id="list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
